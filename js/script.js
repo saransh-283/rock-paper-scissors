@@ -1,4 +1,4 @@
-var you = 0
+/**var you = 0
 var comp = 0
 
 function computerPlay() {
@@ -31,4 +31,5 @@ function game() {
 for (let i = 0; i < 5; i++) {
     game()
 }
-console.log("You: "+you+"\nComputer: "+comp+"\n"+((you>comp)?"You win!":((you<comp)?"Computer wins!":"Tie")))
+console.log("You: "+you+"\nComputer: "+comp+"\n"+((you>comp)?"You win!":((you<comp)?"Computer wins!":"Tie")))**/
+
