@@ -12,26 +12,37 @@
 
     <div class="container">
         <div id="play-area">
-            <div id="player" class="play-box">
-                <div class="play-sign"><i class="fa fa-hand-paper"></i></div>
+            <div>
+                <p class="p-name" id="name">SarK</p>
+                <div id="player" class="play-box">
+                    <div class="play-sign"><i class="fa fa-hand-paper"></i></div>
+                </div>
             </div>
-            <div id="computer" class="play-box">
-                <div class="play-sign"></div>
+            <div>
+                <p class="p-name" id="comp-head">Computer</p>
+                <div id="computer" class="play-box">
+                    <div class="play-sign"></div>
+                </div>
             </div>
         </div>
-        <div id="buttons">
-            <button class="btn buttons">
-                <p><i class="fa fa-hand-rock"></i></p>
-                <p>Rock</p>
-            </button>
-            <button class="btn buttons">
-                <p><i class="fa fa-hand-paper"></i></p>
-                <p>Paper</p>
-            </button>
-            <button class="btn buttons">
-                <p><i class="fa fa-hand-scissors"></i></p>
-                <p>Scissors</p>
-            </button>
+        <p id="result"><span id="winner"></span> won!</p>
+        <div id="play-btns">
+            <div id="buttons">
+                <button class="btn buttons">
+                    <i class="fa fa-hand-rock"></i>
+                </button>
+                <button class="btn buttons">
+                    <i class="fa fa-hand-paper"></i>
+                </button>
+                <button class="btn buttons">
+                    <i class="fa fa-hand-scissors"></i>
+                </button>
+            </div>
+            <div id="btns-2">
+                <input type="text" id="player-name" value="Player">
+                <input type="number" min="1" max="10" id="rounds" value="1">
+                <button class="btn" id="replay-btn">Play Again</button>
+            </div>
         </div>
     </div>
 

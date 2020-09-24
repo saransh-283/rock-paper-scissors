@@ -3,17 +3,21 @@ body {
 }
 
 #play-area {
-    height: 70vh;
+    padding: 10vh 0;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.p-name {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .play-box {
     width: 100%;
     height: 35vh;
     text-align: center;
-    margin: 50% 0;
     border: 3px double rgb(78, 39, 252);
     display: flex;
     align-items: center;
@@ -21,8 +25,25 @@ body {
 
 .play-sign {
     width: 100% !important;
-    font-size: 8rem;
+    font-size: 23vh;
     text-align: center;
+}
+
+#result {
+    width: 100%;
+    text-align: center;
+    background: lightgreen;
+    color: darkgreen;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+#play-btns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
 }
 
 #buttons {
@@ -34,12 +55,39 @@ body {
 
 .buttons {
     background: orange !important;
-    padding-bottom: 0 !important;
+    width: 100%;
 }
 
-/**@media (max-width: 576px){
-    #play-area {
-        grid-template-columns: 1fr;
+#btns-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+input {
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+#replay-btn {
+    background: red !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+@media (max-width: 576px){
+    #play-btns {
+        width: 100%;
+        display: grid;
         grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
     }
-}*/
+
+    #play-area {
+        height: 60vh;
+    }
+}
