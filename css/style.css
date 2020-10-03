@@ -1,5 +1,6 @@
 body {
     background: rgb(31, 0, 167) !important;
+    color: rgb(206, 206, 206) !important;
 }
 
 #play-area {
@@ -27,6 +28,22 @@ body {
     width: 100% !important;
     font-size: 23vh;
     text-align: center;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5vh;
+    text-align: center;
+    background: lightgreen;
+    color: unset;
+}
+
+td {
+    border: 1px solid green;
+    padding: 0.1rem 0;
+    width: 25vw;
+    color: #212529;
 }
 
 #result {
